@@ -13,5 +13,5 @@ public class Book
     [ForeignKey("Author")]
     public long AuthorId { get; set; }
     public Author Author { get; set; }
-    public List<Review> Reviews { get; set; }
+    public ICollection<Review> Reviews { get; set; }
 }
